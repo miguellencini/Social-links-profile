@@ -1,0 +1,76 @@
+:root {
+    --main-bg-color: hsl(0, 0%, 8%);
+    --card-color: hsl(0, 0%, 12%);
+    --btn-color: hsl(0, 0%, 20%);
+    --pagra-color:  hsl(0, 0%, 100%);
+    --verder-pagra: hsl(75, 94%, 57%);
+    --font-size: 14px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+.cartao-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--card-color);
+    width: 100%;
+    max-width: 400px;
+}
+
+.cartao-social .foto-social {
+    width: 100px;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 1.25rem;
+}
+
+.cartao-social h2 {
+    color: var(--pagra-color);
+    margin-bottom: 5px;
+}
+
+.cartao-social .cidade {
+    color: var(--verder-pagra);
+    margin-bottom: 10px;
+}
+
+.cartao-social p {
+    color: var(--pagra-color);
+    margin-bottom: 10px;
+}
+
+.botao-social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+    max-width: 400px;
+}
+
+.botao-social button {
+    width: 340px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--btn-color);
+    cursor: pointer;
+    color: var(--pagra-color);
+    font-weight: 600;
+    font-size: var(--font-size);
+}
+
+.botao-social button:hover {
+    background-color: var(--verder-pagra);
+    color: black;
+}
